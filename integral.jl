@@ -18,6 +18,7 @@ end
 function simpson_adaptivo(f, a, b, ϵ)
     I = simpson(f, a, b)
     return simpson_adaptivo_recursivo(f, a, b, ϵ, I)
+    
 end
 
 function simpson_adaptivo_recursivo(f, a, b, ϵ, I)
